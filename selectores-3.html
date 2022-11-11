@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p {
+        color: seagreen;
+    }
+
+    p::first-letter{
+        color: rgb(128, 0, 0);
+    }
+
+    p::before{
+        content: "😁";
+    }
+
+    p::after{
+        content: "✨";
+    }
+
+    p:hover {
+        color: skyblue;
+    }
+    div p:nth-child(3){
+        color: blue;
+    }    
+
+    ::placeholder{
+        color: blueviolet;
+    }
+
+    li::marker {
+        content: '✔ ';
+        font-size: 1.2em;
+        color: rgb(42, 165, 61);
+} 
+
+ ::backdrop{
+    color: slateblue;
+}
+
+</style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Educación</p>
+        <p>Online</p>
+        <p>Efectiva</p>
+
+            <li>Excelentes Cursos</li>
+            <li>Primeras clases gratis</li>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
